@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Shopping Cart - Shinboi Supply Shop</title>
+
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/styles/style.css">
+
+        <script src="/js/cart.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Shinboi Supply Shop</h1>
+            <p>Your Mission Logistics</p>
+        </header>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./weapons/tools_category.html">Ninja Tools</a></li>
+                <li><a href="./uniforms/uniforms_category.html">Uniforms</a></li>
+                <li><a href="shopping_cart.html">Cart</a></li>
+                <li><a href="/personal/register.html">Register</a></li>
+                <li><a href="/personal/faq.html">FAQ</a></li>
+                <li><a href="/personal/about_me.html">About Me</a></li>
+                <li><a href="/personal/ai_usage.html">AI Usage</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-label="breadcrumb" class="breadcrumbs">
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li>Shopping Cart</li>
+            </ol>
+        </nav>
+
+        <main>
+            <h2>Your Cart</h2>
+
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total-label">Subtotal</td>
+                        <td id="subtotal">$0.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="total-label">Ninja Tax (5%)</td>
+                        <td id="tax">$0.00</td>
+                    </tr>
+                    <tr class="grand-total-row">
+                        <td colspan="3" class="total-label"><strong>Grand Total</strong></td>
+                        <td id="grand-total"><strong>$0.00</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="checkout-area">
+                <a href="shipping_payment.html" class="checkout-button">Proceed to Checkout</a>
+            </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/personal/about_me.html">Contact Us</a></li>
+                    <li><a href="/personal/terms.html">Village Terms of Service</a></li>
+                    <li><a href="/personal/ai_usage.html">Documentation</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Shinboi Supply Shop | Trusted by all Five Great Nations.</p>
+        </footer>
+    </body>
+</html>

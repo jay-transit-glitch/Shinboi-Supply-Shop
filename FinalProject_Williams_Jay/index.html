@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shinboi Supply Shop - Your Source for Ninja Gear</title>
+
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <style>
+            #hero-section {
+            /* REQUIRED CSS3: Gradient [cite: 62] */
+            background: linear-gradient(135deg, #0f0f0f, #333333); 
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            /* REQUIRED CSS3: Box Shadow [cite: 64] */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+            margin-bottom: 30px;
+        }
+
+        .category-container {
+            width: 90%;
+            margin: 0 auto;
+            /* Clearing the floats used on category cards */
+            overflow: hidden; 
+        }
+
+        .category-card {
+            float: left; 
+            width: 48%; 
+            padding: 20px;
+            margin-right: 4%;
+            background-color: #f4f4f4;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px; 
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s;
+        }
+
+        .category-card:nth-child(even) {
+            margin-right: 0;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            .category-card {
+                width: 47%; 
+                margin-right: 3%;
+            }
+            .category-card:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .category-card {
+                float: none;
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Shinboi Supply Shop</h1>
+            <p>Outfitting the next generation of Kage.</p>
+        </header>
+
+        <nav id="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products/weapons/tools_category.html">Weapons</a></li>
+                    <li><a href="/products/uniforms/uniforms_category.html">Uniforms</a></li>
+                    <li><a href="/personal/faq.html">FAQ</a></li>
+                    <li><a href="/personal/about_me.html">About Me</a></li>
+                    <li><a href="/personal/ai_usage.html">AI Usage</a></li>
+                    <li><a href="/personal/register.html">Register</a></li>
+                    <li><a href="/products/shopping_cart.html">Cart</a></li>
+                </ul>
+            </nav>
+        <nav aria-label="breadcrumb" class="breadcrumbs">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+            </ol>
+        </nav>
+        
+        <main>
+            <section id="hero-section">
+                <h2>Prepare for Your Next Mission</h2>
+                <p>From essential kunai to mission-specfic gear, we ensure every shinboi is properly equipped for the field. Quality and trust, backed by the Village Hidden in the Leaves.</p>
+            </section>
+
+            <section id="categories">
+                <h2>Featured Categories</h2>
+                <div class="category-container">
+                    <a href="products/weapons/tools_category.html" class="category-card">
+                        <h3>Ninja Tools</h3>
+
+                        <p>Kunai, Shuriken, Smoke bombs, and more. Sharpen your offense.</p>
+                    </a>
+
+                    <a href="products/uniforms/uniforms_category.html" class="category-card">
+                        <h3>Mission Uniforms</h3>
+
+                        <p>Durable, Lightweight, and stylish vests and attire for any climate.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="featured-media">
+                <h2>Shinboi Traning Essentials</h2>
+                <figure>
+                    <img src="/images/Master using shuriken.png" alt="A master shinoi preparing shuriken">
+                    <figcaption>Precision-forged shuriken: The silent weapin of the elite.</figcaption>
+                </figure>
+
+                <div class="video-container">
+                    <iframe width="560" height="315" src="/Shinboi Training Video.mp4" title="Embedded Training Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="personal/about_me.html">Contact Us</a></li>
+                    <li><a href="personal/terms.html">Village Terms of Service</a></li>
+                    <li><a href="personal/ai_usage.html">Documentation</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Shinboi Supply Shop | Trusted by all Five Great Nations</p>
+        </footer>
+    </body>
+</html>
