@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipping & Payment - Shinobi Supply Shop</title>
+    
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="/styles/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Shinboi Supply Shop</h1>
+            <p>Final Mission Logistics</p>
+        </header>
+
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products/weapons/tools_category.html">Ninja Tools</a></li>
+                <li><a href="/products/uniforms/uniforms_category.html">Uniforms</a></li>
+                <li><a href="/products/shopping_cart.html">Cart</a></li>
+                <li><a href="/personal/register.html">Register</a></li>
+                <li><a href="/personal/faq.html">FAQ</a></li>
+                <li><a href="/personal/about_me.html">About Me</a></li>
+                <li><a href="/personal/ai_usage.html">AI Usage</a></li>
+            </ul>
+        </nav>
+
+        <nav aria-label="breadcrumb" class="breadcrumbs">
+            <ol>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products/shopping_cart.html">Cart</a></li>
+                <li>Checkout</li>
+            </ol>
+        </nav>
+
+        <main>
+            <h2>Shipping & Payment Information</h2>
+            <p>Please provide your secure delivery coordiantes and payment jutsu.</p>
+
+            <form action="order_confirm.html" method="get" id="checkout-form">
+                <fieldset>
+                    <legend>Shipping Coordiantes (Address)</legend>
+
+                    <label for="name">Recipient Name (Required)</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="address1">Street Address 1 (Required)</label>
+                    <input type="text" id="address1" name="address1" required>
+
+                    <label for="address2">Street Address 2 (Apt/Unit/Hideout)</label>
+                    <input type="text" id="address2" name="address2">
+
+                    <label for="city">City/Village (Required)</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="zip">Postal Code (Required)</label>
+                    <input type="text" id="zip" name="zip" pattern="\d{5}" title="Five digit postal code" required>
+
+                    <label for="delivery_speed">Desired Delivery Speed</label>
+                    <select id="delivery_speed" name="delivery_speed">
+                        <option value="standard">Standard Mission (3-5 Days, $5.00)</option>
+                        <option value="express">Express Relay (1-2 Days, $15.00)</option>
+                        <option value="urgent">Urgenr Summoning (Same Day, $50.00)</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment Jutsu</legend>
+
+                    <label for="card_type">Payment Method</label>
+                    <select id="card_type" name="card_type" required>
+                        <option value="">-- Select Payment Method --</option>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amaterasu_coin">Amaterasu Coin (Digital)</option>
+                    </select>
+
+                    <label for="card_number">Card Number (Required)</label>
+                    <input type="number" id="card_number" name="card_number"
+                            pattern="\d{16}" title="16-digit card number" required>
+
+                    <div classs="split-fields">
+                        <div>
+                            <label for="exp_date">Expiration Date (Required)</label>
+                            <input type="month" id="exp_date" name="exp_date" required>
+                        </div>
+                        <div>
+                            <label for="cvv">CVV (Required)</label>
+                            <input type="number" id="cvv" name="cvv"
+                                    pattern="\d{3,4}" title="3 or 4 digit security code" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Confirm Order & Pay</button>
+            </form>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="/personal/about_me.html">Contact Us</a></li>
+                    <li><a href="/personal/terms.html">Village Terms of Service</a></li>
+                    <li><a href="/personal/ai_usage.html">Documentation</a></li>
+                </ul>
+            </nav>
+            <p>&copy; 2025 Shinboi Supply Shop | Trusted by all Five Great Nations.</p>
+        </footer>
+    </body>
+</html>
